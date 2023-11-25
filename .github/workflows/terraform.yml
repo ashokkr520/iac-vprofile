@@ -22,7 +22,7 @@ env:
   AWS_REGION: us-east-1
   EKS_CLUSTER: vprofile-eks
 
-  jobs:
+jobs:  #should be aligned to the env, name and on.
     terraform:
       name: "Apply terraform code changes"
       runs-on: ubuntu-latest #It has many inbuilt softwares like maven, java
@@ -61,4 +61,4 @@ env:
           if: steps.plan.outcome == 'failure'
           run: exit 1  #exit command kills the container
 
-          
+
