@@ -10,7 +10,7 @@ terraform {
       version = "~> 3.5.1"
     }
 
-    tls = {
+    tls = {  #for kubernetes.
       source  = "hashicorp/tls"
       version = "~> 4.0.4"
     }
@@ -27,7 +27,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "vprofileactions369"    #This bucket name is changed accordingly.
+    bucket = "vprofileactionsgit11"    #This bucket name is changed accordingly.
     key    = "terraform.tfstate"   
     region = "us-east-2"
   }
