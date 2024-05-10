@@ -1,5 +1,5 @@
 #GitHub Workflow - YAML GitHub Workflow(github-workflow.json)
-name: "Vprofile IAC"
+name: "iac-vprofile"
 on:
   push:
     branches: 
